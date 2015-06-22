@@ -6,8 +6,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
 </head>
 <body ng-app="ng-orm" ng-controller="MainCtrl">
-  <input ng-model="weight" />
-  <input ng-model="reps" />
+  <label>
+    Weight
+    <input ng-model="weight" />
+  </label>
+
+  <label>
+    Reps
+    <input ng-model="reps" />
+  </label>
   <button ng-click="calculate()">Calculate ORM</button>  
   <h2>Result: {{ result }} </h2>
   <script src="app.js"></script>
