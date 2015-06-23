@@ -17,7 +17,7 @@
   </label>
   <button ng-click="calculate()">Calculate ORM</button>  
   <button ng-click="reset()">Reset</button>  
-  <h2>Result: {{ result }} </h2>
+  <h2>Result: {{ result | number:0 }} </h2>
 
   <!-- Angular module -->
   <script src="app.js"></script>
