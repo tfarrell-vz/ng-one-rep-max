@@ -9,4 +9,6 @@ app.controller('MainCtrl', function($scope) {
     $scope.reps = null;
     $scope.result = null;
   };
+
+  $scope.$watch(function(scope) { return $scope.weight, $scope.reps}, $scope.calculate);
 });
